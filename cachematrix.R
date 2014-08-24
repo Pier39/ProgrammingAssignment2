@@ -1,7 +1,10 @@
 ## This module calculates the inverse of a matrix, using a cache to save
 ## computation resources.
-## Usage: cacheSolve(makeCacheMatrix(x))
+## Usage:
+## 	cc <- makeCacheMatrix(x)
+##	cacheSolve(cc)
 ## where x is an invertible matrix, e.g: x <- matrix(1:4, 2, 2)
+## the next calls of cacheSolve will get inverse the from cache
 
 
 ## makeCacheMatrix is the compound object that associates a matrix and its cache
